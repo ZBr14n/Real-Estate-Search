@@ -1,0 +1,166 @@
+/* .Extras-Section{
+    display: inline-block;
+} */
+
+.Filter-Section{
+    background-color: #FAF7F5;
+    /* background-color: rgb(218, 94, 11); */
+    margin: 20px 20px;
+    /* border: 3px solid red; */
+    width: fit-content;
+}
+.dropdown-toggle{
+    width: 180px;
+}
+
+.Price-Section input{
+    width: 90px;
+}
+
+.Floorspace-Section input{
+    width: 90px;
+}
+
+
+
+.Extras-Section label{
+    display: block;
+    overflow: hidden;
+    width: 180px;
+
+}
+.Extras-Section input[type="checkbox"]{
+    float: right;
+    vertical-align: middle;
+    
+
+}
+
+
+
+
+
+.content-area{
+    position: relative;
+}
+
+/* style mapped data */
+
+    /* position: relative;
+    left: 180%;
+    bottom: 30rem; */
+
+.listings-result{
+    position: absolute;
+    left: 15%;
+    top: 0;
+
+    border: 3px solid #212529;
+    /* box-shadow: #aaa; */
+
+    background-color: #212529;
+}
+
+
+/* this will center the page */
+html{
+    max-width: 100em;
+    margin: 0 auto;
+    position: flex;
+    flex-wrap: wrap;
+}
+#dropdowns-sort{
+    position: relative;
+    left: 85%;
+}
+
+
+
+
+#search-city-nav{
+    font-size: 35px;
+}
+.footer-sect{
+    text-align: center;
+    align-items: center;
+    margin: 0 25%;
+}
+.footer-sect .pagination .page-link{
+    color: white;
+}
+
+
+
+.data-all{
+    display: inline-block;
+    padding: 50px 50px;
+    box-shadow: 0px 9px 54px -4px #e0e0e0;
+}
+.data-all .data-all-images{
+    list-style: none;
+
+    width: 250px;
+    height: 250px;    
+    position: relative;
+    
+}
+
+/* when user hovers the images... */
+.data-all .data-all-images:hover > .data-overlay{
+    transition: background-color .6s ease;
+    background-color: rgba(78,2,229,0.8);
+    /* background: linear-gradient(135deg, rgba(78,2,229,0.8) 0%, rgba(157,28,237,0.8) 100%); */
+    height: 100%;
+    opacity: .9;
+    font-weight: bold;
+    /* z-index: -10; */
+}
+.data-all .data-overlay:hover > .user-details{
+    visibility: visible;
+    display: block;   
+    color: white; 
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+
+.data-all .data-all-images:hover > #data-address{
+    opacity: 0;
+}
+/* .data-all .data-all-images:hover > #svg-heart:hover{
+    background-color: red;
+} */
+
+
+/* before hover */
+#data-address{
+    position: absolute;
+    bottom: 0;
+    font-size: 35px;
+    color: white;
+    text-shadow: 0 1px 4px black;
+}
+.user-details{
+    visibility: hidden;
+}
+
+
+
+.img-price{
+    font-size: 1.3rem;
+    color: white;
+}
+.img-info{    
+    font-size: 1.2rem;
+    color: white;
+}
+
+
+
+
+
+/* .data-all .data-overlay > #fav0{
+    visibility: hidden;
+  } */

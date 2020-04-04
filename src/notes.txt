@@ -1,0 +1,87 @@
+user select their filters --> check all filter values -->
+manip. user values in FilterData()
+
+
+
+
+<li><img src={entry.image} width="250px"  /></li>
+
+
+style={{backgroundImage: "url(" + entry.image + ")"}}
+style={{background: `url("${listing.image}") no-repeat center center`}}
+
+
+
+    const styleHouseImages = {
+      backgroundImage: `url(${data})`     
+      // backgroundImage: "url("+"`${data.image}`"+")",
+
+    };
+
+
+-------------------------------------------------------------
+
+
+we need extra state variables to hold cities, home types,
+bedrooms, price, floor space, elevators, swimming pool.
+
+when user selects multiple filters, check ALL state
+variables and add them to the filter()
+
+
+
+price, floorspace, elevators, swimmingpool, basement, gym
+
+
+
+
+
+<ol>
+        {
+          mylist
+          .filter((entry) => entry.city === userInput)
+          .map((entry,key) => (
+            <div key={key}>
+              <li>{entry.city}</li>
+              <li>{entry.price}</li>
+              <li>{entry.address}</li>
+            </div>
+          ))
+        }
+      </ol>
+
+
+
+
+
+
+
+
+
+// let newData; 
+      // SetFilteredData(data)
+
+      // if (city !== 'All'){
+      //   newData = listingsData.filter(entry=>{
+      //     return entry.city === city
+      //   })
+      // }
+
+      // return(
+      //   <h1>{newData}</h1>
+      // )
+
+      City = city
+      console.log(City)
+      return(
+      <ul>
+      {data.filter(entry=>
+        entry.city === city
+      ).map((item,key)=>(
+        <div key={key}>
+          <li>{item.city}</li>
+          <li>{item.price}</li>
+        </div>
+      ))
+      }
+      </ul>)

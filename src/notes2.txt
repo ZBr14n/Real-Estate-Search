@@ -1,0 +1,105 @@
+<li>
+  <div className="data-all-images" style={{background: `url("${entry.image}") no-repeat center`}}></div>
+  {entry.address}
+</li>
+
+
+
+src={`${entry.image}`}
+
+
+<img style={{background: `url("${entry.image}") no-repeat center`}} />
+
+
+svg:not(:nth-child(1)){
+
+
+===========================================
+
+4-2=2
+4-5=1
+5-1=4
+     
+
+
+ // .map((entry,key)=>(
+      //   <ul className="data-all" key={key}>
+      //     <li style={{background: `url("${entry.image}") no-repeat center`}}>hi</li>
+      //   </ul>
+      // ))
+   
+
+========================================
+     
+   return(
+      // using map() and filter(), info. will be extracted from listingsData.
+
+     <ul>
+       {
+         data
+         .filter((entry) => entry.city === city)
+         .map((entry,key) => (
+           <div key={key}>
+             <li>{entry.city}</li>
+             <li>{entry.price}</li>
+             <li>{entry.address}</li>
+           </div>
+         ))
+       }
+     </ul>
+   )
+
+  //  end of functional component
+
+
+-----------
+
+
+ if (city === 'Ridgewood'){
+
+    }
+    if (city === 'Orlando'){
+      return FilteredData
+      .filter(entry=>entry.city===city)
+      .map((entry,key)=>(
+        <ul className="data-all" key={key}>
+          <li style={{background: `url("${entry.image}") no-repeat center`}}>hi</li>
+        </ul>
+      ))
+    }
+    if (city === 'Sacramento'){
+      return FilteredData
+      .filter(entry=>entry.city===city)
+      .map((entry,key)=>(
+        <ul className="data-all" key={key}>
+          <li style={{background: `url("${entry.image}") no-repeat center`}}>hi</li>
+        </ul>
+      ))
+    }
+    if (city === 'Woodcrest'){
+      return FilteredData
+      .filter(entry=>entry.city===city)
+      .map((entry,key)=>(
+        <ul className="data-all" key={key}>
+          <li style={{background: `url("${entry.image}") no-repeat center`}}>hi</li>
+        </ul>
+      ))
+    }
+    if (city === 'San Francisco'){
+      return FilteredData
+      .filter(entry=>entry.city===city)
+      .map((entry,key)=>(
+        <ul className="data-all" key={key}>
+          <li style={{background: `url("${entry.image}") no-repeat center`}}>hi</li>
+        </ul>
+      ))
+    }
+    if (city === 'Long Beach'){
+      return FilteredData
+      .filter(entry=>entry.city===city)
+      .map((entry,key)=>(
+        <ul className="data-all" key={key}>
+          <li style={{background: `url("${entry.image}") no-repeat center`}}>hi</li>
+        </ul>
+      ))
+    }
